@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8月《復康顧問進修課程》｜呼吸運動方案 × 復康手法 × 營養指導</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", "Noto Sans HK", sans-serif;
+            background: #0f0f0f;
+            color: #e0e0e0;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a3a2a 0%, #0d1f1a 100%);
+            border: 1px solid #2a5a3a;
+            border-radius: 16px;
+            padding: 40px 24px;
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .header .badge {
+            display: inline-block;
+            background: #c49b4c;
+            color: #0f0f0f;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #f0d78c;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .header .subtitle {
+            font-size: 16px;
+            color: #a0c4a0;
+            font-weight: 400;
+        }
+
+        .header .date-highlight {
+            display: inline-block;
+            background: rgba(240, 215, 140, 0.12);
+            border: 1px solid #f0d78c;
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin-top: 16px;
+            font-size: 15px;
+            color: #f0d78c;
+            text-align: left;
+        }
+
+        /* Pain Points */
+        .pain-section {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 28px 20px;
+            margin-bottom: 24px;
+        }
+
+        .pain-section h2 {
+            font-size: 20px;
+            color: #d4944c;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .pain-item {
+            background: #141414;
+            border-left: 3px solid #c94c4c;
+            padding: 12px 16px;
+            margin-bottom: 10px;
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+        }
+
+        /* Section */
+        .section {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 28px 20px;
+            margin-bottom: 24px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .movement h2 {
+            color: #5b9bd5;
+        }
+
+        .nutrition h2 {
+            color: #7cb342;
+        }
+
+        .syllabus-section h2 {
+            color: #c49b4c;
+        }
+
+        .topic-card {
+            background: #141414;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 12px;
+            border: 1px solid #222;
+        }
+
+        .topic-card .topic-num {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: 700;
+            font-size: 14px;
+            margin-right: 8px;
+        }
+
+        .movement .topic-num {
+            background: #5b9bd5;
+            color: #fff;
+        }
+
+        .nutrition .topic-num {
+            background: #7cb342;
+            color: #fff;
+        }
+
+        .topic-card .pain {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 4px;
+            color: #e0e0e0;
+        }
+
+        .topic-card .break {
+            font-size: 14px;
+            color: #c94c4c;
+            margin-bottom: 4px;
+        }
+
+        .topic-card .solution {
+            font-size: 14px;
+            color: #a0c4a0;
+        }
+
+        /* Syllabus Table */
+        .syllabus-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-top: 12px;
+        }
+
+        .syllabus-table th {
+            background: #1a1a1a;
+            color: #f0d78c;
+            padding: 10px 8px;
+            border-bottom: 2px solid #c49b4c;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .syllabus-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #2a2a2a;
+            vertical-align: top;
+            font-size: 13px;
+            color: #c0c0c0;
+        }
+
+        .syllabus-table .unit-num {
+            text-align: center;
+            color: #f0d78c;
+            font-weight: 700;
+            width: 10%;
+        }
+
+        .syllabus-table .unit-topic {
+            color: #e0e0e0;
+            font-weight: 600;
+            width: 22%;
+        }
+
+        .syllabus-table .unit-content {
+            color: #b0b0b0;
+            width: 68%;
+        }
+
+        .syllabus-table tr:hover td {
+            background: #1a1a1a;
+        }
+
+        .part-header {
+            background: #141414;
+            color: #c49b4c;
+            font-weight: 700;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .part-header td {
+            padding: 14px 8px;
+            letter-spacing: 1px;
+        }
+
+        /* Outcome */
+        .outcome {
+            background: #1a2a1a;
+            border: 1px solid #2a4a2a;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .outcome h2 {
+            color: #7cb342;
+            text-align: center;
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+
+        .outcome ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .outcome ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #1a3a1a;
+            font-size: 15px;
+        }
+
+        .outcome ul li::before {
+            content: "✅ ";
+        }
+
+        /* Assessment */
+        .assessment {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .assessment h3 {
+            color: #c49b4c;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .assessment table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .assessment td {
+            padding: 8px;
+            border-bottom: 1px solid #222;
+            font-size: 14px;
+        }
+
+        .assessment td:first-child {
+            color: #c49b4c;
+            font-weight: 600;
+            width: 30%;
+        }
+
+        /* Instructor */
+        .instructor {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .instructor h2 {
+            color: #c49b4c;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        .instructor .name {
+            font-size: 22px;
+            font-weight: 700;
+            color: #f0d78c;
+        }
+
+        .instructor .title {
+            color: #a0a0a0;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .instructor .bio {
+            font-size: 14px;
+            color: #c0c0c0;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* CTA */
+        .cta-section {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #c49b4c 0%, #a07830 100%);
+            color: #0f0f0f;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 16px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 20px rgba(196, 155, 76, 0.3);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 28px rgba(196, 155, 76, 0.5);
+        }
+
+        .urgency {
+            color: #c94c4c;
+            font-size: 14px;
+            margin-top: 12px;
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            background: #1a1200;
+            border: 1px solid #3a2a00;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+            font-size: 12px;
+            color: #a09060;
+            line-height: 1.8;
+        }
+
+        .disclaimer h3 {
+            color: #c49b4c;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+            padding: 20px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 22px;
+            }
+            .section h2 {
+                font-size: 18px;
+            }
+            .cta-button {
+                font-size: 16px;
+                padding: 14px 30px;
+            }
+            .syllabus-table {
+                font-size: 11px;
+            }
+            .syllabus-table td {
+                padding: 6px 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="badge">2025年8月招生</div>
+            <h1>復康顧問進修課程</h1>
+            <div class="subtitle">呼吸運動方案 × 復康手法 × 營養指導</div>
+            <div class="subtitle" style="margin-top:4px;">雙軌並行，一次掌握「運動復康」＋「營養復康」</div>
+            <div class="date-highlight">
+                📅 8月7日 · 14日 · 21日 · 28日 · 9月4日（逢星期五晚 7-10PM）<br>
+                📝 評核日：9月11日 7:00-8:30PM<br>
+                📍 授課語言：粵語；中文教材輔英文專業術語
+            </div>
+        </div>
+
+        <!-- Pain Points -->
+        <div class="pain-section">
+            <h2>你係咪都遇過呢啲情況？</h2>
+            <div class="pain-item">客戶肩頸僵硬，放鬆完下星期又復發，問題不斷循環</div>
+            <div class="pain-item">客戶努力練核心，腹部反而愈練愈突出</div>
+            <div class="pain-item">客戶躺著練好、坐著歸零，腰痛問題無真正解決</div>
+            <div class="pain-item">客戶術後或受傷後水腫遲遲不退、肌肉長期無增長</div>
+            <p style="text-align:center; margin-top:16px; color:#d4944c; font-weight:700;">
+                問題不在於你嘅手法，而係你缺少咗兩項關鍵能力：<br>精準呼吸方案 ＋ 精準營養策略
+            </p>
+        </div>
+
+        <!-- Movement Section -->
+        <div class="section movement">
+            <h2>運動復康 · 五大核心主題</h2>
+
+            <div class="topic-card">
+                <span class="topic-num">1</span>
+                <div class="pain">肩頸僵硬反覆發作？</div>
+                <div class="break">打破「按了又緊、鬆了又回來」的循環</div>
+                <div class="solution">→ 上氣呼吸 + 被動擺位呼吸</div>
+            </div>
+
+            <div class="topic-card">
+                <span class="topic-num">2</span>
+                <div class="pain">練核心越練肚子越大？</div>
+                <div class="break">打破「捲腹＋平板支撐」的迷思</div>
+                <div class="solution">→ 360度腹內壓訓練 + 內核心激活</div>
+            </div>
+
+            <div class="topic-card">
+                <span class="topic-num">3</span>
+                <div class="pain">坐久就腰痠？</div>
+                <div class="break">打破「躺著練好、坐著歸零」的困境</div>
+                <div class="solution">→ 精準呼吸評估 + 呼吸力線重建</div>
+            </div>
+
+            <div class="topic-card">
+                <span class="topic-num">4</span>
+                <div class="pain">久坐的隱形困擾？</div>
+                <div class="break">打破「盆底問題只練凱格爾」的片面思維</div>
+                <div class="solution">→ 盆底訓練 + 穩定訓練 + 骨盆律動評估</div>
+            </div>
+
+            <div class="topic-card">
+                <span class="topic-num">5</span>
+                <div class="pain">運動恢復慢、表現卡關？</div>
+                <div class="break">打破「練越多越強」的迷思</div>
+                <div class="solution">→ 運動前中後呼吸策略 + 後縱隔擴張</div>
+            </div>
+        </div>
+
+        <!-- Nutrition Section -->
+        <div class="section nutrition">
+            <h2>營養復康 · 五大核心主題</h2>
+
+            <div class="topic-card">
+                <span class="topic-num">1</span>
+                <div class="pain">三高失控，藥愈食愈多？</div>
+                <div class="break">打破「三高係三個獨立問題」嘅誤解</div>
+                <div class="solution">→ 三高同一個根源：胰島素阻抗與系統性慢性發炎<br>→ 穩定血糖＋抗發炎＋修復肝臟，由根源入手</div>
+            </div>
+
+            <div class="topic-card">
+                <span class="topic-num">2</span>
+                <div class="pain">復康做極冇進展？</div>
+                <div class="break">打破「狂操就一定會好」嘅迷思</div>
+                <div class="solution">→ 蛋白質精準計算＋攝取時機策略<br>→ 冇足夠原料，做幾多訓練都係白費</div>
+            </div>
+
+            <div class="topic-card">
+                <span class="topic-num">3</span>
+                <div class="pain">壓力肚腩減極唔瘦？</div>
+                <div class="break">打破「節食＋狂操腹肌」嘅誤區</div>
+                <div class="solution">→ 皮質醇（壓力荷爾蒙）先係幕後黑手<br>→ 調節荷爾蒙，由內至外消脂</div>
+            </div>
+
+            <div class="topic-card">
+                <span class="topic-num">4</span>
+                <div class="pain">腸道壞，吸收等於零？</div>
+                <div class="break">打破「食補品就等於吸收到」嘅迷思</div>
+                <div class="solution">→ 腸道屏障破損，食幾貴嘅補充品都冇用<br>→ 清除→接種→修復，重啟營養吸收力，提升免疫功能</div>
+            </div>
+
+            <div class="topic-card">
+                <span class="topic-num">5</span>
+                <div class="pain">肥腫難分，水腫極都唔退？</div>
+                <div class="break">打破「水腫係正常，等佢自己退」嘅被動心態</div>
+                <div class="solution">→ 水腫背後係蛋白質不足＋發炎未受控<br>→ 蛋白質抗腫＋抗炎消腫方案</div>
+            </div>
+        </div>
+
+        <!-- Course Syllabus -->
+        <div class="section syllabus-section">
+            <h2>完整課程大綱</h2>
+
+            <table class="syllabus-table">
+                <!-- Part 1 Header -->
+                <tr class="part-header">
+                    <td colspan="3">第一部分：運動復康（呼吸運動方案 + 復康手法）</td>
+                </tr>
+                <tr>
+                    <th>單元</th>
+                    <th>主題</th>
+                    <th>內容</th>
+                </tr>
+                <tr>
+                    <td class="unit-num">1</td>
+                    <td class="unit-topic">呼吸機能評估與基礎理論</td>
+                    <td class="unit-content">呼吸解剖生理學、呼吸力學與核心穩定機制、常見呼吸模式障礙評估、呼吸與自律神經調節</td>
+                </tr>
+                <tr>
+                    <td class="unit-num">2</td>
+                    <td class="unit-topic">上氣呼吸與肩頸復康</td>
+                    <td class="unit-content">肩頸僵硬之呼吸源性分析、上氣呼吸技術、被動擺位呼吸手法、肩頸張力釋放與神經肌肉再教育</td>
+                </tr>
+                <tr>
+                    <td class="unit-num">3</td>
+                    <td class="unit-topic">腹內壓調控與核心激活</td>
+                    <td class="unit-content">360度腹內壓原理、深層核心肌群激活技術、傳統核心訓練之限制與誤區、腹內壓臨床應用</td>
+                </tr>
+                <tr>
+                    <td class="unit-num">4</td>
+                    <td class="unit-topic">呼吸力線重建與腰椎復康</td>
+                    <td class="unit-content">姿勢性腰痛之呼吸力學成因、精準呼吸模式評估、呼吸力線重建技術、靜態至功能性動作之力線轉移</td>
+                </tr>
+                <tr>
+                    <td class="unit-num">5</td>
+                    <td class="unit-topic">盆底功能與骨盆律動整合</td>
+                    <td class="unit-content">盆底功能障礙之呼吸相關性、盆底肌肉訓練進程、骨盆律動評估與矯正、呼吸-盆底-核心協同訓練</td>
+                </tr>
+                <tr>
+                    <td class="unit-num">6</td>
+                    <td class="unit-topic">運動恢復與呼吸策略應用</td>
+                    <td class="unit-content">運動前中後呼吸策略、後縱隔擴張技術、呼吸與運動表現之關聯、過度訓練之呼吸指標辨識</td>
+                </tr>
+
+                <!-- Part 2 Header -->
+                <tr class="part-header">
+                    <td colspan="3">第二部分：營養復康（精準營養指導）</td>
+                </tr>
+                <tr>
+                    <th>單元</th>
+                    <th>主題</th>
+                    <th>內容</th>
+                </tr>
+                <tr>
+                    <td class="unit-num">7</td>
+                    <td class="unit-topic">代謝症候群與三高營養介入</td>
+                    <td class="unit-content">三高之共同病理根源：胰島素阻抗與系統性慢性發炎、血糖調控之營養策略、抗發炎飲食組合、肝臟代謝修復營養</td>
+                </tr>
+                <tr>
+                    <td class="unit-num">8</td>
+                    <td class="unit-topic">復康期蛋白質需求評估與應用</td>
+                    <td class="unit-content">創傷後蛋白質需求計算公式、蛋白質攝取時機與最適分配、亮氨酸閾值與肌肉蛋白合成機制、實證補充品應用</td>
+                </tr>
+                <tr>
+                    <td class="unit-num">9</td>
+                    <td class="unit-topic">神經內分泌與體態調控</td>
+                    <td class="unit-content">皮質醇與內臟脂肪堆積之關聯、血糖波動對荷爾蒙軸線之影響、荷爾蒙調節之飲食策略、晝夜節律與脂肪代謝</td>
+                </tr>
+                <tr>
+                    <td class="unit-num">10</td>
+                    <td class="unit-topic">腸道屏障功能與營養吸收</td>
+                    <td class="unit-content">腸道通透性與系統性發炎之關聯、腸道菌相與宿主代謝之交互作用、腸道重建三階段：清除-接種-修復、益生菌株與益生元之實證應用</td>
+                </tr>
+                <tr>
+                    <td class="unit-num">11</td>
+                    <td class="unit-topic">術後及創傷後體液平衡管理</td>
+                    <td class="unit-content">水腫之營養性成因、蛋白質與膠體滲透壓之關係、天然抗炎消腫之營養素應用、術後營養介入時間線</td>
+                </tr>
+
+                <!-- Part 3 Header -->
+                <tr class="part-header">
+                    <td colspan="3">第三部分：整合應用</td>
+                </tr>
+                <tr>
+                    <th>單元</th>
+                    <th>主題</th>
+                    <th>內容</th>
+                </tr>
+                <tr>
+                    <td class="unit-num">12</td>
+                    <td class="unit-topic">綜合評估與個人化方案設計</td>
+                    <td class="unit-content">呼吸評估與營養評估之整合框架、個人化方案設計流程、動機式訪談技巧、多維度進度追蹤指標</td>
+                </tr>
+                <tr>
+                    <td class="unit-num">13</td>
+                    <td class="unit-topic">臨床案例研討</td>
+                    <td class="unit-content">真實案例分析（肩頸功能障礙、腰椎問題、代謝症候群、術後復康）、小組討論、方案發表與導師點評</td>
+                </tr>
+                <tr>
+                    <td class="unit-num">14</td>
+                    <td class="unit-topic">專業範疇與執業操守</td>
+                    <td class="unit-content">復康顧問之專業角色定位、與醫療專業之分工協作、香港相關法例規範、合法宣傳與服務界線</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Assessment -->
+        <div class="assessment">
+            <h3>評核安排</h3>
+            <table>
+                <tr>
+                    <td>評核日期</td>
+                    <td>2025年9月11日 19:00-20:30</td>
+                </tr>
+                <tr>
+                    <td>評核形式</td>
+                    <td>臨床案例方案設計 + 口頭發表</td>
+                </tr>
+                <tr>
+                    <td>頒發</td>
+                    <td>出席證明（完成全數課堂及通過評核）</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Outcome -->
+        <div class="outcome">
+            <h2>完成課程後，你將具備以下能力</h2>
+            <ul>
+                <li>掌握呼吸機能評估技術，精確識別客戶功能障礙根源</li>
+                <li>運用呼吸方案及手法處理肩頸功能障礙、核心失穩、盆底功能失調</li>
+                <li>運用精準營養策略支援復康進程、代謝症候群管理、體液平衡調控</li>
+                <li>整合運動復康與營養復康，提供一站式顧問服務方案</li>
+                <li>清晰掌握專業範疇界線，合法安全地提供服務</li>
+            </ul>
+        </div>
+
+        <!-- Target Audience -->
+        <div class="assessment" style="border-color: #2a2a2a;">
+            <h3>適合對象</h3>
+            <table>
+                <tr><td style="width:100%; color:#c0c0c0;">✅ 健身教練、瑜伽導師、物理治療師、運動按摩從業者</td></tr>
+                <tr><td style="width:100%; color:#c0c0c0;">✅ 欲轉型或升級服務之體適能專業人士</td></tr>
+                <tr><td style="width:100%; color:#c0c0c0;">✅ 有志投身體適能及復康事業之人士</td></tr>
+                <tr><td style="width:100%; color:#c0c0c0;">✅ 參加資格：年滿18歲 或 具備1年相關工作經驗</td></tr>
+            </table>
+        </div>
+
+        <!-- Instructor -->
+        <div class="instructor">
+            <h2>課程導師</h2>
+            <div class="name">Gavin</div>
+            <div class="title">資深營養顧問 ｜ 運動復康教練</div>
+            <div class="bio">
+                專注整合呼吸運動方案與精準營養策略，<br>
+                多年實戰經驗，協助過百客戶從根源解決功能障礙問題。<br>
+                擅長將複雜理論轉化為可即刻落地嘅實用方案。
+            </div>
+            <p style="color:#a0a0a0; font-size:12px; margin-top:8px;">（此為預留位置，可按需要修改導師簡介）</p>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-section">
+            <a href="#" class="cta-button" id="ctaBtn">📩 立即查詢 / 報名</a>
+            <div class="urgency">⚠️ 名額有限，先到先得</div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <h3>⚠️ 免責聲明</h3>
+            <p>
+                本課程為私人進修培訓，並非香港資歷架構認可課程。<br>
+                完成課程後學員將獲發「出席證明」，並不代表獲得任何法定專業資格。<br>
+                課程內容涵蓋之運動復康及營養指導，屬健康顧問範疇，並不涉及醫療診斷、治療或處方。<br>
+                學員日後提供服務時，須遵守香港相關法例，清楚區分自身角色，不可進行醫療行為。
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2025 Gavin 復康顧問進修課程</p>
+            <p style="margin-top:4px;">#復康顧問 #呼吸運動方案 #營養復康 #運動復康 #體適能進修</p>
+        </div>
+
+    </div>
+
+    <script>
+        // CTA 按鈕點擊事件（可替換為你的IG/WhatsApp/Google Form連結）
+        document.getElementById('ctaBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            // 👇 替換成你嘅實際連結
+            window.open('https://www.instagram.com/你的IG帳號/', '_blank');
+            // 或用 WhatsApp: window.open('https://wa.me/852你的電話號碼?text=我想查詢8月復康顧問進修課程', '_blank');
+        });
+    </script>
+
+</body>
+</html>
