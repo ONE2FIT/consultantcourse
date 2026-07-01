@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8月《復康教練進修課程》｜呼吸運動方案 × 復康手法 × 營養指導</title>
+    <title>8月《復康顧問進修課程》｜呼吸運動方案 × 復康手法 × 營養指導</title>
     <style>
         * {
             margin: 0;
@@ -336,6 +336,13 @@
             margin-bottom: 24px;
         }
 
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+        }
+
         .cta-button {
             display: inline-block;
             background: linear-gradient(135deg, #c49b4c 0%, #a07830 100%);
@@ -349,11 +356,33 @@
             box-shadow: 0 4px 20px rgba(196, 155, 76, 0.3);
             transition: all 0.3s;
             cursor: pointer;
+            text-align: center;
+            min-width: 260px;
         }
 
         .cta-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 28px rgba(196, 155, 76, 0.5);
+        }
+
+        .cta-button.ig {
+            background: linear-gradient(135deg, #833AB4 0%, #C13584 50%, #E1306C 100%);
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(193, 53, 132, 0.3);
+        }
+
+        .cta-button.ig:hover {
+            box-shadow: 0 6px 28px rgba(193, 53, 132, 0.5);
+        }
+
+        .cta-button.whatsapp {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .cta-button.whatsapp:hover {
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.5);
         }
 
         .urgency {
@@ -399,6 +428,7 @@
             .cta-button {
                 font-size: 16px;
                 padding: 14px 30px;
+                min-width: 220px;
             }
             .syllabus-table {
                 font-size: 11px;
@@ -414,8 +444,8 @@
 
         <!-- Header -->
         <div class="header">
-            <div class="badge">2026年8月招生</div>
-            <h1>復康教練進修課程</h1>
+            <div class="badge">2025年8月招生</div>
+            <h1>復康顧問進修課程</h1>
             <div class="subtitle">呼吸運動方案 × 復康手法 × 營養指導</div>
             <div class="subtitle" style="margin-top:4px;">雙軌並行，一次掌握「運動復康」＋「營養復康」</div>
             <div class="date-highlight">
@@ -619,7 +649,7 @@
                 <tr>
                     <td class="unit-num">14</td>
                     <td class="unit-topic">專業範疇與執業操守</td>
-                    <td class="unit-content">復康教練之專業角色定位、與醫療專業之分工協作、香港相關法例規範、合法宣傳與服務界線</td>
+                    <td class="unit-content">復康顧問之專業角色定位、與醫療專業之分工協作、香港相關法例規範、合法宣傳與服務界線</td>
                 </tr>
             </table>
         </div>
@@ -630,7 +660,7 @@
             <table>
                 <tr>
                     <td>評核日期</td>
-                    <td>2026年9月11日 19:00-20:30</td>
+                    <td>2025年9月11日 19:00-20:30</td>
                 </tr>
                 <tr>
                     <td>評核形式</td>
@@ -676,13 +706,15 @@
                 多年實戰經驗，協助過百客戶從根源解決功能障礙問題。<br>
                 擅長將複雜理論轉化為可即刻落地嘅實用方案。
             </div>
-            <p style="color:#a0a0a0; font-size:12px; margin-top:8px;"></p>
+            <p style="color:#a0a0a0; font-size:12px; margin-top:8px;">（此為預留位置，可按需要修改導師簡介）</p>
         </div>
 
         <!-- CTA -->
         <div class="cta-section">
-            <a href="#" class="cta-button" id="ctaBtn">📩 查看我們的IG</a>
-            <a href="#" class="cta-button" id="ctaBtn2">📩 立即查詢 / 報名</a>
+            <div class="cta-buttons">
+                <a href="https://www.instagram.com/one.2_fit/" target="_blank" class="cta-button ig">📩 查看我們的IG</a>
+                <a href="https://wa.me/85261500005?text=我想查詢8月復康教練進修課程" target="_blank" class="cta-button whatsapp">💬 立即查詢 / 報名</a>
+            </div>
             <div class="urgency">⚠️ 名額有限，先到先得</div>
         </div>
 
@@ -699,27 +731,11 @@
 
         <!-- Footer -->
         <div class="footer">
-            <p>© 2026 Gavin 復康教練進修課程</p>
-            <p style="margin-top:4px;">#復康教練 #呼吸運動方案 #營養復康 #運動復康 #體適能進修</p>
+            <p>© 2025 Gavin 復康顧問進修課程</p>
+            <p style="margin-top:4px;">#復康顧問 #呼吸運動方案 #營養復康 #運動復康 #體適能進修</p>
         </div>
 
     </div>
-
-    <script>
-        // CTA 按鈕點擊事件（可替換為你的IG/WhatsApp/Google Form連結）
-        document.getElementById('ctaBtn').addEventListener('click', function(e) {
-            e.preventDefault();
-            // 👇 替換成你嘅實際連結
-            window.open('https://www.instagram.com/one.2_fit/');
-        document.getElementById('ctaBtn2').addEventListener('click', function(e) {
-            e.preventDefault();
-            // 👇 替換成你嘅實際連結
-            window.open('https://wa.me/85261500005?text=我想查詢8月復康教練進修課程');
-
-            // 或用 WhatsApp: window.open('https://wa.me/852你的電話號碼?text=我想查詢8月復康教練進修課程', '_blank');
-        });
-    </script>
- 
 
 </body>
 </html>
